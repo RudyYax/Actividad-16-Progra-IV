@@ -9,4 +9,27 @@ class Biblioteca:
         self.carrera = carrera
 
     def mostrar(self):
-        print(f"El libro es: {self.libro}, el usuario es: {self.usuario}")
+        print(f"El titulo del Libro es: {self.titulo}, del autor: {self.autor}, con año de publicacion: {self.anio_publicacion}, codigo: {self.codigo}")
+class Libro:
+    def __init__(self):
+        self.libros = {}
+
+    def agregar_Libro(self):
+        try:
+            while True:
+                codigo = int(input("Introduce el codigo del libro"))
+                if codigo in self.libros:
+                    print("el codigo del libro ya existe. (Presione ENTER para ingresar de nuevo")
+                    continue
+
+        except  ValueError:
+            print("ERROR")
+
+
+
+
+
+
+
+
+
